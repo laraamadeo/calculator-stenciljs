@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+.calculator-display-number {
+  width: 100%;
+  font-size: 32px;
+  font-family: monospace;
+  color: beige;
+}

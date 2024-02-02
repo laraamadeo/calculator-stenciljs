@@ -1,0 +1,10 @@
+<!doctype html><html dir="ltr" lang="en"><head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"> <title>Calculator</title> <script type="module" src="/build/calculator-stencil.esm.js" data-stencil></script> <script nomodule="" src="/build/calculator-stencil.js" data-stencil></script> </head> <body style="height: 100vh; display: flex; justify-content: center; align-items: center; background-color: rgb(205, 255, 237);"> <calculator-base></calculator-base><script>
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  // auto-unregister service worker during dev mode
+  navigator.serviceWorker.getRegistration().then(function(registration) {
+    if (registration) {
+      registration.unregister().then(function() { location.reload(true) });
+    }
+  });
+}
+</script></body></html>

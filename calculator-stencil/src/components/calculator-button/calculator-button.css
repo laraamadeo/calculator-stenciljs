@@ -1,0 +1,28 @@
+:host {
+  display: block;
+}
+
+.calculator-button {
+  width: 100%;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 12px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px;
+  text-align: center;
+}
+
+.calculator-button:hover {
+  background-color: #fae8cc;
+}
+
+.calculator-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
